@@ -2,16 +2,13 @@
   (:require [lein-pocketbook.core :as core]
             [lein-pocketbook.utils :as u]))
 
-;;;
-;; FIXME why does it do it twice??!!!??? (Or more if i use lein.core.project/merge-profiles)
-;;;
-
-;; FIXME figure out why p/merge-profiles doesn't work..
+;; FIXME ??? why does it do it twice??!!!??? (Or more if i use lein.core.project/merge-profiles)
+;; FIXME ??? figure out why p/merge-profiles doesn't work..
+;; TODO research how to do this properly w/o middleware
 
 (defn pocketbook-middleware-dependencies
   "Adds source and javadoc to project dependencies."
   [project]
-  ;; TODO research how to do this properly w/o middleware
   (let [deps                  (:dependencies project)
         repos                 (into {} (:repositories project))
         args                  {:coordinates  deps
@@ -21,7 +18,8 @@
     (leiningen.core.main/info "Adding to :dependencies" (u/pprint sources+javadocs-deps))
     (assoc project :dependencies all-deps)))
 
-(defn pocketbook-middleware-resources
+;; FIXME ??? not working?
+#_(defn pocketbook-middleware-resources
   "Adds source and javadocs jars to dev project resources."
   [project]
   (let [deps                       (:dependencies project)

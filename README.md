@@ -5,11 +5,22 @@ you can jump to them in emacs.
 
 ## Usage
 
-Add something like this to your `:user` / `:dev` `:plugins`
+Add something like this to your `project.clj`
 ```clojure
-{:user {:plugins [[lein-pocketbook "0.1.3-SNAPSHOT"]]
-        :middleware [lein-pocketbook.plugin/pocketbook-middleware-resources]}}
+  :plugins [[lein-pocketbook "0.1.4-SNAPSHOT"]]
+  :middleware [lein-pocketbook.plugin/pocketbook-middleware-dependencies]
 ```
+
+
+
+**TODO** `profiles.clj` is the place to put it, test and make sure it works...
+
+```clojure
+
+{:user {:plugins [[lein-pocketbook "0.1.4-SNAPSHOT"]]
+        :middleware [lein-pocketbook.plugin/pocketbook-middleware-dependencies]}}
+```
+
 
 ## License
 
