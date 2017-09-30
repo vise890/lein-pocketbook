@@ -4,7 +4,7 @@
             [lein-pocketbook.utils :as u])
   (:import java.io.File))
 
-;; (s/def ::args (s/keys :req [:repositories :coordinates]))
+;; NOTE: ::args ::  {:repositories {} :coordinates [[]]}
 
 ;; TODO classloader?
 
