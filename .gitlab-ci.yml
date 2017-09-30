@@ -1,0 +1,7 @@
+image: clojure:lein-2.7.0
+
+test:
+  stage: test
+  script:
+  - lein test
+
