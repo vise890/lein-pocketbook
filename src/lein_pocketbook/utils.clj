@@ -18,9 +18,8 @@
   [m]
   (mapcat identity m))
 
-;; FML. are we serious?
 (defn apply-kwargs
-  "Apply for dumb kwargs functions"
+  "apply for kwargs functions"
   [f m]
   (apply f (unroll m)))
 
@@ -35,6 +34,7 @@
          nil)))
 
 (defn disk-memoize
+  "caches a fn to disk in the ./target dir"
   [f]
   (fn [& args]
     (let [f-name     (string/replace (str f) #"@.*$" "")

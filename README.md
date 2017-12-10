@@ -8,17 +8,13 @@ you can jump to them in emacs.
 Add something like this to your `project.clj`
 ```clojure
   :plugins [[lein-pocketbook "0.1.4-SNAPSHOT"]]
-  :middleware [lein-pocketbook.plugin/pocketbook-middleware-dependencies]
 ```
-
-
 
 **TODO** `profiles.clj` is the place to put it, test and make sure it works...
 
 ```clojure
-
-{:user {:plugins [[lein-pocketbook "0.1.4-SNAPSHOT"]]
-        :middleware [lein-pocketbook.plugin/pocketbook-middleware-dependencies]}}
+;; NOTE: untested
+{:user {:plugins [[lein-pocketbook "0.1.4-SNAPSHOT"]]}}
 ```
 
 
