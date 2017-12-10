@@ -1,4 +1,4 @@
-# lein-pocketbook
+# lein-pocketbook [![pipeline status](https://gitlab.com/vise890/lein-pocketbook/badges/master/pipeline.svg)](https://gitlab.com/vise890/lein-pocketbook/commits/master)
 
 A Leiningen plugin to add sources / javadocs to your dev dependencies so that
 you can jump to them in emacs.
