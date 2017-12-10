@@ -25,6 +25,7 @@ Add something like this to your `project.clj`
 - why does it do it twice? (`lein repl`)
 - it will overwrite any deps with the "sources" or "javadoc" classifier that are also part of the full dep graph
 - doesn't add java srcs
+- 1 jump only. Jumping to java from clj works.. but once you're in javaland, you can't jump around anymore...
 
 ## License
 
