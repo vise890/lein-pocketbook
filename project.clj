@@ -10,6 +10,6 @@
                    [["clojars" {:url           "https://clojars.org/repo"
                                 :username      :env
                                 :password      :env
-                                :sign-releases false}]]}})
+                                :sign-releases false}]]}}
 
   :eval-in-leiningen true)
