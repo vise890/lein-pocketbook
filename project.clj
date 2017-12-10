@@ -12,4 +12,6 @@
                                 :password      :env
                                 :sign-releases false}]]}}
 
+  :plugins [[lein-codox "0.10.3"]]
+
   :eval-in-leiningen true)
