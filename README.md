@@ -19,6 +19,12 @@ Add something like this to your `project.clj`
 {:user {:plugins [[lein-pocketbook "0.1.4-SNAPSHOT"]]}}
 ```
 
+## Outstanding Issues
+
+- disk caching is very hacky
+- why does it do it twice? (`lein repl`)
+- it will overwrite any deps with the "sources" or "javadoc" classifier that are also part of the full dep graph
+- doesn't add java srcs
 
 ## License
 
