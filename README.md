@@ -3,6 +3,8 @@
 A Leiningen plugin to add sources / javadocs to your dev dependencies so that
 you can jump to them in emacs.
 
+## [API Docs](https://vise890.gitlab.io/lein-pocketbook/)
+
 ## Usage
 
 Add something like this to your `project.clj`
