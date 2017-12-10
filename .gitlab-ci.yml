@@ -1,7 +1,19 @@
-image: clojure:lein-2.7.0
+image: clojure:lein-2.8.1
 
-test:
-  stage: test
+deploy:
+  stage: deploy
+  only:
+    - master
   script:
-  - lein test
+    - lein with-profile ci deploy clojars
 
+pages:
+  stage: deploy
+  only:
+    - master
+  script:
+    - lein do clean, codox
+    - mv ./target/doc ./public
+  artifacts:
+    paths:
+      - public
